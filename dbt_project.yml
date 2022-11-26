@@ -43,9 +43,9 @@ models:
         +schema: icms
     edw:
       +materialized: view
-      +database: edw
+      +database: edw_dev
       +schema: dimensions
     semantic:
       +materialized: view
-      +database: semantic
+      +database: semantic_dev
       +schema: dimensions
