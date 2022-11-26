@@ -1,0 +1,21 @@
+version: 2
+sources:
+  - name: raw_icms
+    database: raw_prod
+    schema: icms
+    tables:  
+      - name:  employee
+        identifier:  emp
+      - name:  address
+        identifier:  address
+  - name: raw_chr
+    database: raw_prod
+    schema: chr
+    tables:  
+      - name:  customer
+        identifier:  customer
+      
+      
+
+      
+       

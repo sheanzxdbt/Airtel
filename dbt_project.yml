@@ -34,9 +34,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     # Applies to all files under models/example/
-    icms:
-      +materialized: table
-      +schema: icms
-    chr:
-      +materialized: table
-      +schema: chr
+    curated:
+      chr:
+        +materialized: view
+        +schema: chr
+      icms:
+        +materialized: view
+        +schema: icms
+    edw:
+      +materialized: view
+      +database: edw
+      +schema: dimensions
+    semantic:
+      +materialized: view
+      +database: semantic
+      +schema: dimensions
